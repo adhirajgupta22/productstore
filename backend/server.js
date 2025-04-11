@@ -11,9 +11,9 @@ const _dirname = path.resolve(); //this is used to get the current directory pat
 
 app.use(express.json());
 
-app.get('/',(req,res)=>{
-    res.send("Home page");
-});
+// app.get('/',(req,res)=>{
+//     res.send("Home page");
+// });
 app.use('/api/products',productRoutes);
 
 if(process.env.NODE_ENV === "production")
