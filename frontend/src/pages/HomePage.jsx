@@ -6,6 +6,7 @@ import ProductCard from "../components/ProductCard";
 
 const HomePage = () => {
     const {fetchProducts,products} = useProductStore();
+	console.log("render");
     useEffect(() => {
         fetchProducts();
     }, [fetchProducts]);
